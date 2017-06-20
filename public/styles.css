@@ -1,0 +1,53 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.user {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 18%;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.name {
+  color: blue;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.job {
+  color: black;
+  text-align: left;
+}
+
+.forhire {
+  color: red;
+  text-align: left;
+}
+
+/**/
+.wrapper2 {
+  text-align: center;
+}
+
+.round {
+  border: 1px solid lightgray;
+  border-radius: 90%;
+}
