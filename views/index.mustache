@@ -28,23 +28,47 @@
       <div id="wrapper2">
         {{#userBox}}
           {{#users}}
-            <div class="user2">
-            <img class="round" src={{avatar}}>
-            <p class="name">{{name}}</p>
-            <p>{{#address}}
-                {{city}}, {{country}}
-                {{/address}}
-            </p>
-            {{#job}}
-              <p class="job">{{job}}</p>
-            {{/job}}
-            {{^job}}
-              <p class="forhire">Available for hire<p>
-            {{/job}}
-          </div>
+            <div class="user-2">
+              <div class="top-row">
+                <div class="wrapper-image">
+                  <img class="round" src={{avatar}}>
+                </div>
+                <div class="contact">
+                  <p class="name-2">{{name}}</p>
+                  <p>
+                  {{#address}}
+                    {{#city}}
+                      {{city}}, 
+                    {{/city}}
+                    {{country}} 
+                  {{/address}}
+                  | 
+                  {{#job}}
+                    {{job}}, {{company}}
+                  {{/job}}
+                  {{^job}}
+                    Available for hire
+                  {{/job}} <br>
+                  {{email}} | {{phone}}
+                  </p>
+                </div>
+              </div>
+              <p>
+                {{#university}}
+                  Education{{university}}
+                {{/university}}
+              </p>
+              <p>
+                Skills 
+                {{#skills}}
+                  {{#.}}
+                    {{.}}<br>
+                  {{/.}}
+                {{/skills}}
+              </p>
+            </div>
           {{/users}}
         {{/userBox}}
       </div>
-
   </body>
 </html>

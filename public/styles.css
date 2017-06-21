@@ -42,12 +42,38 @@
   text-align: left;
 }
 
-/**/
+/*------------------*/
 .wrapper2 {
   text-align: center;
+}
+
+.user-2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper-image {
+  width: 30%;
+  margin-right: 20;
 }
 
 .round {
   border: 1px solid lightgray;
   border-radius: 90%;
+  width: 150px;
+  float: right;
+}
+
+.contact {
+  width: 60%;
+  margin: 0px 20px;
+}
+
+.name-2 {
+  font-size: 3em;
+ 
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row nowrap;
 }
