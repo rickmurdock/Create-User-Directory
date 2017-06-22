@@ -7,3 +7,4 @@ Using the attached `data.js` file, build an Express app that works as a director
 The amount of info each user has varies. Users with no job or company data are currently looking for work.
 
 Your directory should look like the following images. Your CSS should be in a file in the `/public/` directory and be served through Express.
+![Mock up screen shot](https://github.com/rickmurdock/Create-User-Directory/blob/master/MockUpScreenShot1.png)
