@@ -15,6 +15,11 @@ app.get('/', function (req, res) {
   res.render('index', {userBox: userData});
 })
 
+app.get('/:id', function (req, res) {
+  var i = req.params.id - 1;
+  res.render('detail', {userBox: userData.users[i]});
+})
+
 app.listen(port, function() {
   console.log('Express user directory Started on port', port);
 });

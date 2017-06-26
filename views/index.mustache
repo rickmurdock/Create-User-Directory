@@ -12,60 +12,17 @@
         {{#userBox}}
           {{#users}}
             <div class="user">
-            <img src={{avatar}}>
-            <p class="name">{{name}}</p>
-            {{#job}}
-              <p class="job">{{job}}</p>
-            {{/job}}
-            {{^job}}
-              <p class="forhire">Available for hire<p>
-            {{/job}}
-          </div>
-          {{/users}}
-        {{/userBox}}
-      </div>
-
-      <div id="wrapper2">
-        {{#userBox}}
-          {{#users}}
-            <div class="user-2">
-              <div class="top-row">
-                <div class="wrapper-image">
-                  <img class="round" src={{avatar}}>
-                </div>
-                <div class="contact">
-                  <p class="name-2">{{name}}</p>
-                  <p>
-                  {{#address}}
-                    {{#city}}
-                      {{city}}, 
-                    {{/city}}
-                    {{country}} 
-                  {{/address}}
-                  | 
-                  {{#job}}
-                    {{job}}, {{company}}
-                  {{/job}}
-                  {{^job}}
-                    Available for hire
-                  {{/job}} <br>
-                  {{email}} | {{phone}}
-                  </p>
-                </div>
-              </div>
-              <p>
-                {{#university}}
-                  Education{{university}}
-                {{/university}}
-              </p>
-              <p>
-                Skills 
-                {{#skills}}
-                  {{#.}}
-                    {{.}}<br>
-                  {{/.}}
-                {{/skills}}
-              </p>
+              <!--<a href="/{{id}}">-->
+              <a href=/{{id}}>
+                <img src={{avatar}}>
+                <p class="name">{{name}}</p>
+                {{#job}}
+                  <p class="job">{{job}}</p>
+                {{/job}}
+                {{^job}}
+                  <p class="forhire">Available for hire<p>
+                {{/job}}
+              </a>
             </div>
           {{/users}}
         {{/userBox}}

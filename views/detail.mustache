@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+  <div id="wrapper2">
+        {{#userBox}}
+            <div class="user-2">
+              <div class="top-row">
+                <div class="wrapper-image">
+                  <img class="round" src={{avatar}}>
+                </div>
+                <div class="contact">
+                  <p class="name-2">{{name}}</p>
+                  <p>
+                  {{#address}}
+                    {{#city}}
+                      {{city}}, 
+                    {{/city}}
+                    {{country}} 
+                  {{/address}}
+                  | 
+                  {{#job}}
+                    {{job}}, {{company}}
+                  {{/job}}
+                  {{^job}}
+                    Available for hire
+                  {{/job}} <br>
+                  {{email}} | {{phone}}
+                  </p>
+                </div>
+              </div>
+              <div class="edu-row">
+              
+                  {{#university}}
+                  <div class="edu">
+                    <p>Education</p>
+                  </div>
+                  <div class="school">
+                    {{university}}
+                  </div>
+                  {{/university}}
+              
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <p>
+                {{#university}}
+                  Education{{university}}
+                {{/university}}
+              </p>
+              <p>
+                Skills 
+                {{#skills}}
+                  {{#.}}
+                    {{.}}<br>
+                  {{/.}}
+                {{/skills}}
+              </p>
+            </div>
+        
+        {{/userBox}}
+      </div>
+  </body>
+</html>
