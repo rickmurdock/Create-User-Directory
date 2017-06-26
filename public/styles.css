@@ -42,7 +42,7 @@
   text-align: left;
 }
 
-/*------------------*/
+/*------ detail page ------------*/
 .wrapper2 {
   text-align: center;
 }
@@ -54,7 +54,7 @@
 
 .wrapper-image {
   width: 30%;
-  margin-right: 20;
+  margin-right: 20px;
 }
 
 .round {
@@ -76,19 +76,21 @@
 .top-row {
   display: flex;
   flex-direction: row nowrap;
+  margin-bottom: 20px;
 }
 
-.edu-row {
+.edu-row, .skill-row {
   display: flex;
   flex-direction: row nowrap;
 }
 
-.edu {
-  width: 150px;
-  float: right;
+.edu, .skill {
+  width: 30%;
+  margin: 0 20px 10px 0;
+  text-align: right;
 }
 
-.school {
+.school, .skills {
   width: 60%;
-  margin: 10px 20px;
+  margin: 0 20px 10px 20px;
 }

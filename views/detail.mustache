@@ -28,43 +28,35 @@
                     {{job}}, {{company}}
                   {{/job}}
                   {{^job}}
-                    Available for hire
+                    <span class="forhire">Available for hire</span>
                   {{/job}} <br>
                   {{email}} | {{phone}}
                   </p>
                 </div>
               </div>
               <div class="edu-row">
-              
                   {{#university}}
                   <div class="edu">
-                    <p>Education</p>
+                    <p><strong>Education</strong></p>
                   </div>
                   <div class="school">
                     {{university}}
                   </div>
                   {{/university}}
-              
               </div>
-
-              <br>
-              <br>
-              <br>
-              <p>
-                {{#university}}
-                  Education{{university}}
-                {{/university}}
-              </p>
-              <p>
-                Skills 
-                {{#skills}}
-                  {{#.}}
-                    {{.}}<br>
-                  {{/.}}
-                {{/skills}}
-              </p>
+              <div class="skill-row">
+                  <div class="skill">
+                    <p><strong>Skills</strong></p>
+                  </div>
+                  <div class="skills">
+                    {{#skills}}
+                    {{#.}}
+                      {{.}}<br>
+                    {{/.}}
+                    {{/skills}}
+                  </div>
+              </div>
             </div>
-        
         {{/userBox}}
       </div>
   </body>
