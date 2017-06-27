@@ -12,10 +12,10 @@
           {{#users}}
             <div class="user">
               <a href=/{{id}}>
-                <img src={{avatar}}>
+                <img class="img" src={{avatar}}>
                 <p class="name">{{name}}</p>
                 {{#job}}
-                  <p class="job">{{job}}</p>
+                  <p class="job">{{job}}, {{company}}</p>
                 {{/job}}
                 {{^job}}
                   <p class="forhire">Available for hire<p>
